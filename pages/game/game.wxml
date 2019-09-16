@@ -1,0 +1,37 @@
+
+<view class='container'> 
+  <!-- loading -->
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+
+  <view class='head'>
+    <view class='lside'>
+      <text class='change' bindtap='changeSide'>更换阵营</text>
+      <text class='play' bindtap='gameStart'>{{start}}</text>
+    </view>
+    <view class='rside'>
+      <text>回合 <text class='score'>{{count}}</text></text>
+    </view>
+  </view>
+
+  <view class="game"> 
+    <!-- 矩阵 -->
+    <view>
+      <view class='row' wx:for="{{num}}" wx:for-item="row" wx:key="row.key" >
+        <view class='cell' wx:for="{{row}}" wx:for-item="cell" wx:key="cell.key">
+          <view class='cell-con cell-con-{{cell.value}} cell-con-lastsel-{{cell.id - lastSelect}} cell-con-lastmove-{{cell.id - lastMove}}' bindtap='ontaped' id="{{cell.id}}">
+            {{cell.key}}
+          </view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- game over -->
+    <view class='game-over' hidden='{{!over}}'>
+      <text class='nowScore'>{{result}}</text>
+      <text class='nowScore'>回合：{{count}}</text>
+      <text class='pro'>{{endMsg}}</text> 
+    </view> 
+  </view>
+</view>

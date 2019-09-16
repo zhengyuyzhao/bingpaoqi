@@ -1,0 +1,8 @@
+<!--pages/rules/rule.wxml-->
+<view class="main">
+  <text class="text">走法：</text>
+  <text class="text">小兵每次只能上下左右在没有棋子的空格走一格，大炮除了可以走一格，也可以吃掉中间空一格的小兵。</text>
+  <text class="text">输赢：</text>
+  <text class="text">小兵把大炮围住，大炮没有地方移动的时候，小兵获胜。</text>
+  <text class="text">小兵的数量小于4的时候，大炮获胜。</text>
+</view>

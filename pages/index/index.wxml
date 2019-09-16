@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+      <open-data type="userNickName" class="userinfo-nickname"></open-data> -->
+    </block>
+  </view>
+  <view class="usermotto">
+     <text class='renji' bindtap='bindViewTap'>人机对战</text>
+     <!-- <text class='online' bindtap='gameStart'>在线游戏</text> -->
+     <text class='online' bindtap='rule'>规则说明</text>
+  </view>
+</view>
+

@@ -1,0 +1,58 @@
+/**index.wxss**/
+
+.container {
+  color: #776e65;
+  background-color: #faf8ee;
+  height: 100vh;
+  position: relative;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 30px;
+  height: 60vh;
+  width: 20vh;
+  text-align: center;
+}
+
+.renji {
+  font-size: 20px;
+  background-color: #bbada0;
+  color: #fff;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  float: left;
+  margin-top: 5vh;
+}
+.online {
+  font-size: 20px;
+  background-color: #bbada0;
+  color: #fff;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  margin-top: 5vh;
+  float: left;
+}

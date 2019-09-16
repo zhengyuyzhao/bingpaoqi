@@ -1,0 +1,13 @@
+/* pages/rules/rule.wxss */
+.main {
+  color: #776e65;
+  background-color: #faf8ee;
+  height: 100vh;
+  position: relative;
+  padding: 10vh;
+  float: left;
+} 
+.text{
+  margin-top: 2vh;
+  float: left;
+}
